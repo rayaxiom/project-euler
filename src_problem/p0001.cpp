@@ -4,21 +4,20 @@
  *
  *    Description:  http://projecteuler.net/problem=1
  *
- *        Version:  1.0
- *        Created:  27/12/12 22:05:06
- *       Revision:  none
- *       Compiler:  gcc
+ *    If we list all the natural numbers below 10 that are multiples 
+ *    of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+ *    Find the sum of all the multiples of 3 or 5 below 1000.
  *
- *         Author:  Raymon White, 
+ *    Author:  Raymon White,
+ *    http://ilearnsum.blogspot.co.uk/p/project-euler.html
  *
  * =====================================================================================
  */
 #include <iostream>
-#include <cstdlib>
+#include <cstdlib> // For EXIT_SUCCESS
 #include <cmath>
 #include "ray_maths.h"
 
-// Find the sum of all the multiples of 3 or 5 below 1000.
 int main(int argc, char* argv[])
 {
   unsigned long max = 1000-1; // BELOW 1000
