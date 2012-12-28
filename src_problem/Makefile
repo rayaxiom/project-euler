@@ -1,4 +1,4 @@
-# Useage: make FILE=p0001
+# Usage: make FILE=p0001
 BIN_DIR=./../bin/
 FILE=
 CC=g++
