@@ -27,15 +27,17 @@ int main(int argc, char* argv[])
   // Since we need to examine every Fibonacci number, it is better
   // to calculate them using a loop, rather than a formula.
   
-  
   // Sum of even Fibonacci number.
   unsigned sum_even_fib = 0;
+ 
   // Previous Fibonacci number
   unsigned fib_prev = 0;
 
   // Current Fibonacci number
   unsigned fib_current = 1;
-  while(fib_current < upper_limit)
+
+  // Note: does not EXCEED implies inclusion of the upper limit.
+  while(fib_current <= upper_limit)
   {
     unsigned fib_new = fib_current + fib_prev;
     fib_prev = fib_current;
@@ -47,7 +49,9 @@ int main(int argc, char* argv[])
       sum_even_fib += fib_current;
     }
   }
+  
   std::cout << sum_even_fib << std::endl;
+  
   return EXIT_SUCCESS;
 }
 
