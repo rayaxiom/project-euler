@@ -1,0 +1,31 @@
+BIN_DIR=./../bin/
+CC=g++
+CFLAGS=-c -Wall
+LDFLAGS=
+
+
+
+all: r_all e_all
+
+r_SOURCES=p0001.cpp
+r_OBJECTS=$(r_SOURCES:.cpp=.o)
+r_EXECUTABLE=$(BIN_DIR)p0001
+
+r_all: $(r_SOURCES) $(r_EXECUTABLE)
+	
+$(r_EXECUTABLE): $(r_OBJECTS) 
+	$(CC) $(LDFLAGS) $(r_OBJECTS) -o $@
+
+
+e_SOURCES=p0002.cpp
+e_OBJECTS=$(e_SOURCES:.cpp=.o)
+e_EXECUTABLE=$(BIN_DIR)p0002
+
+e_all: $(e_SOURCES) $(e_EXECUTABLE)
+	
+$(e_EXECUTABLE): $(e_OBJECTS) 
+	$(CC) $(LDFLAGS) $(e_OBJECTS) -o $@
+
+
+.cpp.o:
+	$(CC) $(CFLAGS) $< -o $@

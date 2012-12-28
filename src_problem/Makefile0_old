@@ -1,0 +1,22 @@
+# Directory for executables
+BIN_DIR=./../bin/
+
+CC=g++
+CFLAGS=-c -Wall
+
+# Problem 0001
+all: p0001
+
+p0001: p0001.o
+	$(CC) -o $(BIN_DIR)p0001 p0001.o
+
+p0001.o: p0001.cc
+	$(CC) $(CFLAGS) p0001.cc
+
+
+
+
+
+
+
+
