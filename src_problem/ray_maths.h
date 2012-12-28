@@ -14,6 +14,8 @@
  *
  * =====================================================================================
  */
+#ifndef __RAY_MATHS_H_INCLUDED__
+#define __RAY_MATHS_H_INCLUDED__
 
 namespace raymaths
 {
@@ -33,5 +35,5 @@ namespace raymaths
 
 }
 
-
+#endif
 
