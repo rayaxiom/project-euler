@@ -1,5 +1,6 @@
 # Executable directory
-bin/
+!bin/
+bin/*
 
 # Compiled Object files
 *.slo
